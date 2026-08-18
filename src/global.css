@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@import "uniwind";
+
+@import "heroui-native/styles";
+@source '../node_modules/heroui-native/lib';
+
+@theme {
+  --color-stay-50: #f5faf3;
+  --color-stay-100: #e9f4e4;
+  --color-stay-200: #d3e8ca;
+  --color-stay-300: #b0d4a1;
+  --color-stay-400: #85b870;
+  --color-stay-500: #639d4c;
+  --color-stay-600: #4e7f3a;
+  --color-stay-700: #3f6530;
+  --color-stay-800: #35512a;
+  --color-stay-900: #2c4324;
+  --color-stay-950: #14240f;
+  --font-outfit-bold: "InterBold";
+  --font-outfit-semibold: "InterSemiBold";
+  --font-outfit-medium: "InterMedium";
+  --font-outfit: "InterRegular";
+}
+
+@layer theme {
+  @variant light {
+    --accent: var(--color-stay-600);
+  }
+
+  @variant dark {
+    --accent: var(--color-stay-600);
+  }
+}
